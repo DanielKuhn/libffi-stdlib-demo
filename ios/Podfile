@@ -62,6 +62,15 @@ target 'libffistdlibdemo' do
       :mac_catalyst_enabled => false
     )
 
+    installer.pods_project.targets.each do |target|
+      if target.name == 'libffi_apple'
+        target.build_configurations.each do |config|
+          config.build_settings['HEADER_SEARCH_PATHS'] = ['$(inherited)', '$(PODS_TARGET_SRCROOT)']
+          config.build_settings['USE_HEADERMAP'] = 'NO'
+        end
+      end
+    end
+
     # This is necessary for Xcode 14, because it signs resource bundles by default
     # when building for devices.
     installer.target_installation_results.pod_target_installation_results
