@@ -1,6 +1,8 @@
 PODS:
   - boost (1.83.0)
   - DoubleConversion (1.1.6)
+  - EasySwiftHook (3.5.1):
+    - libffi_apple (~> 3.4.4)
   - EXConstants (15.4.5):
     - ExpoModulesCore
   - EXFont (11.10.3):
@@ -32,6 +34,7 @@ PODS:
     - hermes-engine/Pre-built (= 0.73.5)
   - hermes-engine/Pre-built (0.73.5)
   - libevent (2.1.12)
+  - libffi_apple (3.4.4)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -1076,6 +1079,7 @@ PODS:
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - EasySwiftHook
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFont (from `../node_modules/expo-font/ios`)
   - Expo (from `../node_modules/expo`)
@@ -1134,8 +1138,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - EasySwiftHook
     - fmt
     - libevent
+    - libffi_apple
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1252,6 +1258,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
+  EasySwiftHook: fdc5fa59870db886ada3f34f796903e92ac16d12
   EXConstants: 988aa430ca0f76b43cd46b66e7fae3287f9cc2fc
   EXFont: f20669cb266ef48b004f1eb1f2b20db96cd1df9f
   Expo: a7c9bd836cb7c86e699c2539a906c9ff873f19f8
@@ -1264,6 +1271,7 @@ SPEC CHECKSUMS:
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   hermes-engine: 1d1835b2cc54c381909d94d1b3c8e0a2f1a94a0e
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  libffi_apple: 6e58d4f9faa5111041891ec03d4df8ece1d02f9c
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 2544c0f1081a5fa12e108bb8cb40e5f4581ccd87
   RCTTypeSafety: 50efabe2b115c11ed03fbf3fd79e2f163ddb5d7c
@@ -1308,6 +1316,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: a716eea57d0d3430219c0a5a233e1e93ee931eb7
 
-PODFILE CHECKSUM: 2de4e482f015c735aa079aef7c20c1f76a00dc93
+PODFILE CHECKSUM: c2cff3cd3ffcb1381bed348ebd953b050ce9e689
 
 COCOAPODS: 1.14.3

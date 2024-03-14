@@ -53,6 +53,8 @@ target 'libffistdlibdemo' do
     :flipper_configuration => flipper_config
   )
 
+  pod 'EasySwiftHook'
+
   post_install do |installer|
     react_native_post_install(
       installer,
