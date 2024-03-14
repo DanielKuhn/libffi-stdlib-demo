@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "libffi-stdlib-demo",
+    "slug": "libffi-stdlib-demo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "libffi-stdlib-demo"
+}
